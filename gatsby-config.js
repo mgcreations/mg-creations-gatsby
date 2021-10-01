@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
     title: "MG Creations",
+    author: "Michael Ashworth",
+    description: "Website & Graphic Design based in Pietermaritzburg.",
   },
   plugins: [
     "gatsby-plugin-sass",
