@@ -6,6 +6,8 @@ import BannerLanding from "../components/BannerLanding";
 
 import picWebsite from "../assets/images/Live-Laugh-Love---eCommerce-Website.jpg";
 import picGraphicDesign from "../assets/images/Graphic-Design-Work.png";
+import picSEO from "../assets/images/picSEO.jpg";
+import vidLogo from "../assets/images/logo-vid.mp4";
 
 const Services = (props) => (
   <Layout>
@@ -38,7 +40,7 @@ const Services = (props) => (
       </section>
       <section id="two" className="spotlights">
         <section>
-          <span className="image fit">
+          <span className="image">
             <img src={picWebsite} alt="eCommerce Website" />
           </span>
           <div className="content">
@@ -54,12 +56,33 @@ const Services = (props) => (
                 site on your own schedule. Because inventory moves fast and your
                 website should too.
               </p>
+              <ul className="actions">
+                <li>
+                  <Link to="/generic" className="button">
+                    Learn more
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <span className="image">
+            <img src={picSEO} alt="eCommerce Website" />
+          </span>
+          <div className="content">
+            <div className="inner">
+              <header className="major">
+                <h3>SEO</h3>
+              </header>
               <p>
-                One key feature of the nopCommerce platform is its pluggable
-                modular/layered architecture which allows additional
-                functionality and elements to be dynamically added to your
-                website at runtime. This pluggable modular architecture makes it
-                easy to manage your website.
+                Search Engine Optimisation is a big part of web design and
+                development. The main goal is to enhance your business visibilty
+                online. The process involves making small changes to your
+                website set up in order to rank higher in the search results.
+                The higher the search result the more likely for click through
+                to your website. This is an going development process for each
+                page of your website.
               </p>
               <ul className="actions">
                 <li>
@@ -73,43 +96,60 @@ const Services = (props) => (
         </section>
       </section>
 
-      <section id="one">
+      <section id="three">
         <div className="inner">
           <header className="major">
             <h2>Graphic Design</h2>
           </header>
           <p>
             MG Creations - Innovative Web and Graphic Design offers a full range
-            of graphic design and print solutions. We design and print
-            brochures, flyers, business cards, poster, stickers, corporate
-            folders, sign boards, t-shirts, caps and other promotional items.
-            Let MG Creations - Innovative Web and Graphic Design build your
-            business' brand.
+            of graphic design and print solutions. Whether you are looking to
+            revamp your logo across all channels or create exciting advertising
+            pieces that stand out to your target audience.
+            <br />
+            Let's build your business' brand.
           </p>
         </div>
       </section>
-      <section id="two" className="spotlights">
+      <section className="spotlights">
         <section>
-          <span className="image fit">
-            <img src={picGraphicDesign} alt="eCommerce Website" />
+          <span className="image">
+            <img src={picGraphicDesign} alt="Graphic Design" />
           </span>
           <div className="content">
             <div className="inner">
               <header className="major">
                 <h3>Large range of branding deliverables</h3>
               </header>
-              <ul>
-                <li>Logo Design</li>
-                <li>Promotional and advertising poster production</li>
-                <li>Pull-up and PVC banner design</li>
-                <li>Flyers, Brochures &amp; Catalogue</li>
-                <li>Advertisements</li>
-                <li>Business cards</li>
-                <li>Corporate campaign design work</li>
-                <li>Email signatures</li>
-                <li>A4 Presentation folders</li>
-                <li>Signage</li>
+              <p>
+                Logo Design | Promotional and advertising poster production |
+                Pull-up and PVC banner design | Flyers, Brochures &amp;
+                Catalogue | Advertisements | Business cards | Corporate campaign
+                design work | Email signatures | A4 Presentation folders |
+                Signage
+              </p>
+              <ul className="actions">
+                <li>
+                  <Link to="/generic" className="button">
+                    Learn more
+                  </Link>
+                </li>
               </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <span className="image">
+            <video controls>
+              <source src={vidLogo} type="video/mp4" />
+            </video>
+          </span>
+          <div className="content">
+            <div className="inner">
+              <header className="major">
+                <h3>Logo </h3>
+              </header>
+              <p>Text</p>
               <ul className="actions">
                 <li>
                   <Link to="/generic" className="button">
