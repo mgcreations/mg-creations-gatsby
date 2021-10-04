@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import BannerLanding from "../components/BannerLanding";
 
 import picWebsite from "../assets/images/Live-Laugh-Love---eCommerce-Website.jpg";
-import picGraphicDesign from "../assets/images/Graphic-Design-Work.png";
+import picGraphicDesign from "../assets/images/Stationery-Logo-Mockups.jpg";
 import picSEO from "../assets/images/picSEO.jpg";
 import vidLogo from "../assets/images/logo-vid.mp4";
 
@@ -147,9 +147,13 @@ const Services = (props) => (
           <div className="content">
             <div className="inner">
               <header className="major">
-                <h3>Logo </h3>
+                <h3>Logo Amination</h3>
               </header>
-              <p>Text</p>
+              <p>
+                Bring your logo to life and convey your story.
+                <br />
+                It is importamt that it truely reflects your brand's uniqueness.
+              </p>
               <ul className="actions">
                 <li>
                   <Link to="/generic" className="button">

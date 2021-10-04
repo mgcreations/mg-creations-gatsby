@@ -57,7 +57,7 @@ class HomeIndex extends React.Component {
                 <h3>SEO</h3>
                 <p>Don't get lost in the crowd</p>
               </header>
-              <Link to="/" className="link primary"></Link>
+              <Link to="/services" className="link primary"></Link>
             </article>
             <article style={{ backgroundImage: `url(${pic04})` }}>
               <header className="major">
@@ -71,7 +71,7 @@ class HomeIndex extends React.Component {
                 <h3>Logo Animation</h3>
                 <p>Simple, creative logo animation</p>
               </header>
-              <Link to="/" className="link primary"></Link>
+              <Link to="/services" className="link primary"></Link>
             </article>
             <article style={{ backgroundImage: `url(${pic06})` }}>
               <header className="major">
