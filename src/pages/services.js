@@ -140,7 +140,7 @@ const Services = (props) => (
         </section>
         <section>
           <span className="image">
-            <video controls>
+            <video controls width="576">
               <source src={vidLogo} type="video/mp4" />
             </video>
           </span>
