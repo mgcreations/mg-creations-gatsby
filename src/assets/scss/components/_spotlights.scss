@@ -39,6 +39,11 @@
       }
     }
 
+    video {
+      width: 100%;
+      height: auto;
+    }
+
     > .content {
       @include vendor("display", "flex");
       @include vendor("flex-direction", "column");
