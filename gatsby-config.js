@@ -13,6 +13,7 @@ module.exports = {
       resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [".mdx", ".md"],
+        defaultLayout: require.resolve("./src/components/blog-post-layout.js"),
       },
     },
     "gatsby-plugin-sharp",
@@ -36,9 +37,10 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "posts",
-        path: "./src/posts/",
+        name: "blog",
+        path: "./src/pages/blog",
       },
+      __key: "blog",
     },
   ],
 };
