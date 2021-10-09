@@ -1,8 +1,9 @@
 import * as React from "react";
+import { MDXProvider } from "@mdx-js/tag";
 import Helmet from "react-helmet";
 import Layout from "./layout";
 
-function BlogPostLayout({ children, pageContext }) {
+const BlogPostLayout = ({ children, pageContext }) => {
   const { title, author, date } = pageContext.frontmatter;
   return (
     <Layout>
@@ -15,10 +16,10 @@ function BlogPostLayout({ children, pageContext }) {
           <span>Author: {author}</span>
           <time>Date: {date}</time>
         </header>
-        {children}
+        <MDXProvider>{children}</MDXProvider>
       </article>
     </Layout>
   );
-}
+};
 
 export default BlogPostLayout;

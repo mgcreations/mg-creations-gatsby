@@ -21,6 +21,11 @@ const Menu = (props) => (
             Portfolio
           </Link>
         </li>
+        <li>
+          <Link onClick={props.onToggleMenu} to="/blog">
+            Blog
+          </Link>
+        </li>
       </ul>
     </div>
     <a className="close" onClick={props.onToggleMenu} href="javascript:;">

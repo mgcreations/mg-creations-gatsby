@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Layout from "./layout";
 
-function BrowseBlogPosts({ pageContext }) {
+const BrowseBlogPosts = ({ pageContext }) => {
   const { groupedPosts, group, page } = pageContext;
   return (
     <Layout>
@@ -22,7 +22,7 @@ function BrowseBlogPosts({ pageContext }) {
         );
       })}
       <footer>
-        Pages:{""}
+        Pages:{" "}
         {groupedPosts.map((x, index) => {
           const currentPage = index + 1;
           return (
@@ -38,6 +38,6 @@ function BrowseBlogPosts({ pageContext }) {
       </footer>
     </Layout>
   );
-}
+};
 
 export default BrowseBlogPosts;
